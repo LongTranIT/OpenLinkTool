@@ -11,10 +11,10 @@ const createWindow = () => {
             preload: path.join(__dirname, "preload.js"),
         },
     });
-    mainWindow.loadFile("index.html");
 
     // Open the DevTools.
     // mainWindow.webContents.openDevTools();
+    mainWindow.loadFile("index.html");
 };
 
 const excApp = (programPath) => {

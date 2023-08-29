@@ -1,15 +1,25 @@
 {
-  "name": "openlinktool",
+  "name": "OpenLinkTool",
+  "productName": "OpenLinkTool",
+  "description": "My Electron application description",
+  "keywords": [],
+  "main": "./index.js",
   "version": "1.0.0",
-  "description": "OpenLinkTool",
-  "main": "index.js",
+  "author": "tranp",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
     "start": "electron ."
   },
-  "author": "LongTranIT",
-  "license": "ISC",
+  "dependencies": {
+    "electron-squirrel-startup": "1.0.0",
+    "@electron-forge/cli": "6.1.1",
+    "@electron-forge/maker-deb": "6.1.1",
+    "@electron-forge/maker-rpm": "6.1.1",
+    "@electron-forge/maker-squirrel": "6.1.1",
+    "@electron-forge/maker-zip": "6.1.1",
+    "@electron-forge/plugin-auto-unpack-natives": "6.1.1",
+    "@electron-forge/publisher-github": "6.1.1"
+  },
   "devDependencies": {
-    "electron": "^26.0.0"
+    "electron": "26.0.0"
   }
 }

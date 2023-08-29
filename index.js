@@ -34,7 +34,10 @@ app.whenReady().then(() => {
         excApp(path);
     });
     ipcMain.on("npmStart", () => {
-        exec("code -n . && npm start");
+        // exec("code -n . && npm start");
+        // exec("ode");
+        // exec("code --reuse-window && npm start");
+        exec("code D:\\ElectronJS\\tool1 && npm start");
     });
 
     app.on("activate", () => {
